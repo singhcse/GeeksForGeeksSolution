@@ -1,0 +1,32 @@
+import java.util.*;
+
+import java.lang.*;
+
+import java.io.*;
+
+import java.math.*;
+
+
+class GFG {
+
+	public static void main (String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+
+            while(a-- > 0){
+
+            BigInteger b = sc.nextBigInteger();
+
+            if(b.equals(BigInteger.ZERO)) System.out.println("NO");
+
+            else if((b.and(b.subtract(BigInteger.ONE))).equals(BigInteger.ZERO)) System.out.println("YES");
+
+            
+            else System.out.println("NO");
+        }
+
+	}
+
+}
